@@ -12,34 +12,33 @@
 
 #include <unistd.h>
 
-void    ft_print_combn_rec(int n, int index, int start)
+void	ft_print_combn_rec(int n, int index, int start)
 {
-    int i;
-    
-    if (index == n)
-        return ;
-    else
-    {
-        i = start;
-        while (i <= 9)
-        {
-            i++;
-        }
-    }
+	int	i;
+
+	if (index == n)
+		return ;
+	else
+	{
+		i = start;
+		while (i <= 9)
+		{
+			i++;
+		}
+	}
 }
 
-void    ft_print_combn(int n)
+void	ft_print_combn(int n)
 {
-    int index;
-    int start;
-    
-    index = 0;
-    start = 1;
-    if (n > 0 && n < 10)
-    {
-        ft_print_combn_rec(n, index, start);
-    }
-    else
-        write(1, "Error: Try again!", 17);
-}
+	int	index;
+	int	start;
 
+	index = 0;
+	start = 1;
+	if (n > 0 && n < 10)
+	{
+		ft_print_combn_rec(n, index, start);
+	}
+	else
+		write(1, "Error: Try again!", 17);
+}
