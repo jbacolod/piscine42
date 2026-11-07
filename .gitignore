@@ -1,0 +1,10 @@
+# Eseguibili e file oggetto compilati
+*.o
+*.a
+*.out
+a.out
+
+# File temporanei di sistema ed editor
+.DS_Store
+*.swp
+*~
